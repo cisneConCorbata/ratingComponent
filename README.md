@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [[Add solution URL here](https://github.com/cisneConCorbata/ratingComponent.git)](https://your-solution-url.com)
+- Live Site URL: [(https://cisneconcorbata.github.io/ratingComponent)](https://cisneconcorbata.github.io/ratingComponent)
 
 ## My process
 
@@ -54,4 +54,4 @@ I'd like to learn more about how to make this solution more accessible, as the r
 ## Author
 
 - GitHub - [cisneConCorbata](https://github.com/cisneConCorbata)
-- Frontend Mentor - [@cisneConCorbata](https://www.frontendmentor.io/profile/cisneConCorbata)git
+- Frontend Mentor - [@cisneConCorbata](https://www.frontendmentor.io/profile/cisneConCorbata)
