@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [[Add solution URL here](https://github.com/cisneConCorbata/ratingComponent.git)](https://your-solution-url.com)
+- Solution URL: [[https://github.com/cisneConCorbata/ratingComponent.git](https://github.com/cisneConCorbata/ratingComponent.git)]
 - Live Site URL: [(https://cisneconcorbata.github.io/ratingComponent)](https://cisneconcorbata.github.io/ratingComponent)
 
 ## My process
