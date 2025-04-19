@@ -1,0 +1,227 @@
+  @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+  :root {
+	--orange: hsl(25, 97%, 53%);
+	--lightGray: hsl(217, 12%, 63%);
+    --mediumGray: hsl(213, 19%, 18%);
+	--darkGray: hsl(216, 12%, 8%);
+    --opacityGray: hsla(217, 12%, 63%, 0.1);
+	--white: hsl(0, 0%, 100%);
+}
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Overpass', sans-serif;
+        font-size: 15px;
+        color: var(--lightGray);
+        background-color: var(--darkGray);
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90vh;
+    }
+
+    h1, button.submit {
+        color: var(--white);
+    }
+
+    button, label.star {
+        font-family: 'Overpass', sans-serif;
+        border: none;
+        cursor: pointer;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    legend {
+        color: var(--orange);
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    legend, .star, .star > span {
+        background-color: var(--opacityGray);
+        border-radius: 50px;
+    }
+
+    button, h1, p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .state1, .state2 {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+}
+
+    .state2{
+        display: none;
+        text-align: center;
+    }
+
+    .content {
+        background-color: var(--mediumGray);
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    img.star {
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        margin-bottom: 15px;
+    }
+
+    img.star:hover {
+        animation: spin linear;
+        animation-duration: .8s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes spin {
+        from {rotate: 0deg;}
+        to {rotate: 360deg;}
+    }
+
+    .rate {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        gap: 5px;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .star input[type="radio"] {
+        display: contents;
+    }
+
+    .star > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        padding-top: 13px;
+        width: 30px;
+        height: 30px;
+        color: var(--lightGray);
+        text-align: center;
+    }
+
+    .star:hover > span {
+        color: var(--white);
+        background-color: var(--orange);
+    }
+
+    input[name="starSelect"]:checked + span, .star:focus > span {
+        color: hsl(0, 0%, 100%);
+        background-color: var(--lightGray);
+    }
+
+    button.submit {
+        background-color: var(--orange);
+        border-radius: 50px;
+        color: var(--white);
+        text-transform: uppercase;
+        padding: 10px;
+        letter-spacing: 2pt;
+    }
+
+    button.submit:active, button.submit:hover {
+        background-color: var(--white);
+        color: var(--orange);
+    }
+
+    span:hover, span:active, span:focus, button:hover, button:active, button:focus {
+        transition: 1s;
+    }
+
+    .alert {
+        display: none;
+        text-align: center;
+        color: var(--orange);
+        animation: show 1s;
+    }
+
+    @keyframes show {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    .illustration {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .attribution {
+        width: 100%;
+        position: fixed;
+        font-size: 11px;
+        text-align: center;
+        bottom: 0;
+        padding: 10px;
+    }
+
+    .attribution a {
+        color: var(--orange);
+    }
+
+
+@media (max-width: 768px) {
+
+    .content {
+        width: 70%;
+        max-height: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    main {
+        max-height: 100vh;
+    }
+
+    .content {
+        max-height: 100vh;
+    }
+
+    label.star {
+        width: 20px;
+        height: 20px;
+    }
+}
